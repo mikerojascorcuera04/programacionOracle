@@ -1,0 +1,51 @@
+
+User created.
+
+SQL> cone
+SP2-0042: unknown command "cone" - rest of line ignored.
+SQL> conn mike/ella as sysdba
+Connected.
+SQL> show user
+USER is "SYS"
+SQL> conn mike/ella
+ERROR:
+ORA-01045: user MIKE lacks CREATE SESSION privilege; logon denied
+
+
+Warning: You are no longer connected to ORACLE.
+SQL> GRANT connect, resource TO mike;
+SP2-0640: Not connected
+SQL> conn mike/ella as sysdba
+Connected.
+SQL> GRANT connect, resource TO mike;
+
+Grant succeeded.
+
+SQL> show user
+USER is "SYS"
+SQL> conn mike/ella
+Connected.
+SQL> show user
+USER is "MIKE"
+SQL> create user vendedor IDENTIFIED BY ella;
+create user vendedor IDENTIFIED BY ella
+                                   *
+ERROR at line 1:
+ORA-01031: insufficient privileges
+
+
+SQL> connec sys/oracle as sysdba
+Connected.
+SQL> create user vendedor IDENTIFIED BY ella;
+
+User created.
+
+SQL> GRANT connect, resource TO vendedor;
+
+Grant succeeded.
+
+SQL> connec vendedor/ella
+Connected.
+SQL> show user
+USER is "VENDEDOR"
+SQL>
