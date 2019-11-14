@@ -1,0 +1,102 @@
+Note: This list does not include sports game (since they're easy to
+         recognize and most of them are multiplayer)
+      This list does not include games with only 2P alternating modes
+         and also games that requires the SNES Mouse/Super Scope.
+      This list is also incomplete.  You can find the latest list at
+      www.zsnes.com/multi.html
+
+Dec 25,2000 - Added 2 entries courtesy of Drake
+Nov 19,2000 - Added 2 entries courtesy of kLoNe
+Nov 15,2000 - Added 1 entry courtesy of kLoNe
+Nov 14,2000 - Added 1 entry courtesy of kLoNe
+Nov 11,2000 - Added 27 entries courtesy of Simon Belmont
+
+Aero Fighters
+Art of Fighting 1 & 2
+Battletoads in Battlemaniacs
+Battletoads vs DoubleDragon
+Brawl Brothers
+Brutal: Paws of Fury
+Captain Commando
+Clayfighters 1, 2 and Special Edition
+Contra 3
+Darius Twin
+Double Dragon 5
+Dragonball Z Super Butoden 1-3
+Dragonball Z Hyper Dimension
+Faceball
+Fatal Fury 1, 2, & Special
+Fighter's History
+Final Fight 2 & 3
+Ghoul Patrol
+Goemon 2, 3, & 4
+Goof Troop
+Gundam Wing: Endless Duel
+Joe&Mac 1 & 2
+Jurassic Park 2 - The Chaos Continues
+Killer Instinct
+King of the Monsters 1 & 2
+Kirby's Avalanche
+Kirby's Dreamland 3
+Kirby Super Star
+Legend of the Mystical Ninja
+Lemmings 1
+Megaman 7 (Secret Code - password 1415/5585/7823/6251 and press L+R+Start)
+Metal Warriors
+Mortal Kombat 1 & 2
+Mortal Kombat 3 (some rom version don't work on ZSNES)
+NP Mario Picross Series
+Peace Keapers
+Pirates of the Dark Water
+Pocky & Rocky 1 & 2
+Pop'n Twinbee
+Power Instinct
+Primal Rage
+Puzzle Bobble (Bust a Move)
+Raiden
+Rampart
+Ranma 1/2 II
+Rise of the Robots
+Rival Turf
+Run Saber
+Sailor Moon
+Sailor Moon R
+Sailor Moon S
+Sailor Moon Puzzle (R,S,Super S)
+Sailor Moon Fighting (S,Super S)
+Samurai Shodown
+Secret of Mana
+Seiken Densetsu 3
+Shaq fu
+Star Fox 2 Beta
+Star Trek Starfleet Academy
+Street Fighter 2 (and derivatives)
+Street Fighter 2 Turbo
+Street Fighter Alpha 2 (doesn't work properly in ZSNES)
+Street Racer
+Stunt Race FX
+Sunset Riders
+Super Bomberman 1-5
+Super Mario All-Stars (SMB3 minigame)
+Super Mario Kart
+Super Mario World 2: Yoshi's Island (Secret Code - at map, hold select,
+                                     then press X,X,Y,B,A)
+Super Offroad
+Super Smash TV
+Super Street Fighter 2
+Suzuka 8 Hours
+Teenage Mutant Ninja Turtles 4 - Turtles in Time
+Teenage Mutant Ninja Turtles 5 - Tournament Fighters
+Tetris & Dr.Mario
+Tetris 2
+Tetris 3
+Tetris Attack
+The Great Circus Mystery
+Top Gear 2
+Tuff e Nuff
+Ultimate Mortal Kombat 3
+Uniracers (2P not working well in ZSNES)
+Wild Guns
+World Heroes 1 & 2
+Wrecking Crew 98
+Zombies Ate My Neighbors

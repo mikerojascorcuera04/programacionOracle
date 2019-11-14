@@ -1,0 +1,49 @@
+Filing a useful bug report:
+
+There's a few simple things you can do to help us
+deal with your bug report more effectively.
+
+Before reporting, check any recent bug reports on
+the ZSNES boards, read the readme about unsupported
+chips, and the bug tracker at
+http://zsnes.sourceforge.net
+
+First, We need version and port. It isn't helpful
+for us to test a game that's "broken" if you are 
+using 1.17b, and don't tell us that fact, because
+we may have fixed it in 1.20 or later. Also, report
+whether you are using ZSNESW, ZSNES linux, or ZSNES DOS.
+Rarely, a problem is port specific, but reporting
+the port used up front makes it much easier to get
+a person with the proper port to test.
+
+Second, a detailed name of the game is helpful. It
+is common for a game to act different in different
+regions. By explaining you're using a Us, European,
+or Japanese version, you make testing signifcantly
+easier, because we can test the exact game, rather
+than picking which "Puzzle Bobble" you mean.
+
+Third, describe the problem in detail. Is it an 
+emulation bug? If not, can you reproduce it? If
+it is an emulation bug, investigate. Does the
+game lock up? Or does the sound fail? Are the
+graphics wrong? Provide details. Toggle the
+backgrounds or sound channels, and see if you can
+find anything, like background 3 is corrupt, or
+if offset-per-tile is messed up. Does the old
+gfx engine act the same? Is a particular sound
+channel sticking on?
+
+When the game starts, does ZSNES say "OK" in the
+checksum field?
+
+Finally, do other emulators run the game correctly?
+
+If you have any additional information, like when
+the game may have quit working, or when another
+emulator ran it, or a game that acts the same.
+
+Thanks.
+
+System specs are also nice, but less essential.

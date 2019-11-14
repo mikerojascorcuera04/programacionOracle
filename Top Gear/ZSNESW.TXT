@@ -1,0 +1,54 @@
+ZSNESWin 1.35
+---------------------------------------------
+Use this version at your own risk.  The ZSNES team is not responsible
+for any damages that might have occured using this software.
+
+NOTE: If ZSNESWin crashes on you, first make sure that any major program
+  is closed (such as WinAMP).  You also might need to download and install
+  the newest DirectX located at www.microsoft.com/directx
+NOTE2: If you find ZSNESWin to be a bit choppy and you have a decent
+  machine (300mhz+), you might want to change your video modes in
+  ZSNESWin until you find the optimal mode that runs at the optimal speed.
+
+Usage:
+------
+- To move the window, you can either drag the top bar using the left mouse
+  button in the GUI or hold the right mouse button anywhere in the GUI
+- To move the mouse out of the ZSNESw window, move the mouse with extra speed
+- The top-right corner has a close button and a maximize/minimize button
+  which switches between the last selected (or default) windowed/full
+  screen mode
+- To use a joystick, go to Input #1 (or whichever input device you want to
+  set) through the Config menu and then select the button you want to
+  change.  Then just push the button or direction on your joystick that you
+  want to use for that button.  Or you can just use the 'Set All' button to
+  change the snes buttons/directions all at once.
+
+Things you should know / Performance Issues:
+--------------------------------------------
+- To get the maximum possible performance from your system, try various
+  video modes and see which one is right for you.  Certain video cards
+  perform really slowly in the S modes while others perform just as
+  fast on the S modes compared to the non-S modes.  If you're using
+  a windowed mode, try setting your desktop to 16bit color
+  for best performance.
+- D windowed modes only work in 16bit color desktop resolutions
+- Take note that the non-D video modes will not display high resolution
+  games or effects.
+- Scanlines don't work well in R video modes.
+
+Currently known bugs (exclusive to the windows port):
+-----------------------------------------------------
+- Pressing alt-enter during gameplay doesn't work well (colors sometimes
+  mess up, this is likely a driver issue)
+- Alt-Enter only works with the left Alt key
+
+
+Current limitations:
+--------------------
+- Windowed modes with a 'D' only works when the desktop is under a 16bit
+  color mode
+- 48000 sampling rate is disabled since we're not sure if the sound pitch
+  of this mode is consistent throughout all soundcards.
+- You cannot move the window off-screen
+- You cannot use the 256 color video engines in the win port
