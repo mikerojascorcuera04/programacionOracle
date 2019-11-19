@@ -1,0 +1,219 @@
+Microsoft Windows [Versión 10.0.17763.107]
+(c) 2018 Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\Administrador>sqlplus /nolog
+
+SQL*Plus: Release 11.2.0.2.0 Production on Mar Nov 19 10:03:05 2019
+
+Copyright (c) 1982, 2014, Oracle.  All rights reserved.
+
+SQL> connect sys/oracle as sysdba
+Connected.
+SQL> show user
+USER is "SYS"
+SQL> create user Mike IDENTIFIED BY 1234;
+
+User created.
+
+SQL> GRANT connect, resource TO Mike
+  2
+SQL> GRANT connect, resource TO Mike;
+
+Grant succeeded.
+
+SQL> connec Mike/1234
+Connected.
+SQL> show user
+USER is "MIKE"
+SQL> show parameter
+ORA-00942: table or view does not exist
+
+
+SQL> show parameter table
+ORA-00942: table or view does not exist
+
+
+SQL> create table Categoria(
+  2  codigo (5,0) not null primary key
+  3  descripcion varchar2(80) not null);
+codigo (5,0) not null primary key
+       *
+ERROR at line 2:
+ORA-00902: invalid datatype
+
+
+SQL> create table Categoria(
+  2  codigo (5,0) not null primary key,
+  3  descripcion varchar2(80) not null);
+codigo (5,0) not null primary key,
+       *
+ERROR at line 2:
+ORA-00902: invalid datatype
+
+
+SQL> create table Categoria(
+  2  codigo (5) not null primary key,
+  3  descripcion varchar2(80) not null);
+codigo (5) not null primary key,
+       *
+ERROR at line 2:
+ORA-00902: invalid datatype
+
+
+SQL> create table Categoria(
+  2  codigo number(5,0) not null primary key,
+  3  descripcion varchar2(80) not null);
+
+Table created.
+
+SQL> create table usuario(
+  2  codigo number(5,0) not null primary key,
+  3  nombre varchar2(40) not null,
+  4  pass varchar2(40) not null)
+  5
+SQL> create table usuario(
+  2  codigo number(5,0) not null primary key,
+  3  nombre varchar2(40) not null,
+  4  pass varchar2(40) not null);
+
+Table created.
+
+SQL> create table producto(
+  2  codigo number(5,0) not null primary key,
+  3  nombre varchar2(40) not null,
+  4  precio_unitario number(5) not null);
+
+Table created.
+
+SQL> insert into categoria
+  2
+SQL> CREATE SEQUENCE sq_Categoria;
+
+Sequence created.
+
+SQL> insert into categoria
+  2  values (sq_Categoria, Mike, Hola)
+  3  values (sq_Categoria, Mike, Hola)
+  4
+SQL> insert into categoria
+  2  values (sq_Categoria, 'Mike', 'Hola'),
+  3  (sq_Categoria, 'Jose', 'Hello');
+values (sq_Categoria, 'Mike', 'Hola'),
+                                     *
+ERROR at line 2:
+ORA-00933: SQL command not properly ended
+
+
+SQL> insert into categoria
+  2  values (sq_Categoria, 'Mike', 'Hola');
+insert into categoria
+            *
+ERROR at line 1:
+ORA-00913: too many values
+
+
+SQL> insert into Categoria
+  2  values (sq_Categoria, 'Mike', 'Hola');
+insert into Categoria
+            *
+ERROR at line 1:
+ORA-00913: too many values
+
+
+SQL> INSERT INTO Categoria
+  2  VALUES(sq_Categoria, 'Mike', 'Hola');
+INSERT INTO Categoria
+            *
+ERROR at line 1:
+ORA-00913: too many values
+
+
+SQL> INSERT INTO categoria
+  2  VALUES(sq_categoria, 'Mike', 'Hola');
+INSERT INTO categoria
+            *
+ERROR at line 1:
+ORA-00913: too many values
+
+
+SQL> INSERT INTO Categoria
+  2  VALUES(sq_categoria.nextval,'Mike','Hola');
+INSERT INTO Categoria
+            *
+ERROR at line 1:
+ORA-00913: too many values
+
+
+SQL> INSERT INTO Categoria
+  2  VALUES(sq_categoria.nextval,'Mike'),
+  3  (sq_categoria.nextvak,'Jose');
+VALUES(sq_categoria.nextval,'Mike'),
+                                   *
+ERROR at line 2:
+ORA-00933: SQL command not properly ended
+
+
+SQL> INSERT INTO Categoria
+  2  VALUES(1,'Mike'),
+  3  (2,'Jose');
+VALUES(1,'Mike'),
+                *
+ERROR at line 2:
+ORA-00933: SQL command not properly ended
+
+
+SQL> INSERT INTO Categoria
+  2  VALUES('1','Mike');
+
+1 row created.
+
+SQL> INSERT INTO Categoria
+  2  VALUES('2','Jose');
+
+1 row created.
+
+SQL> INSERT INTO usuario
+  2  VALUES(
+  3
+SQL> CREATE SEQUENCE sq_usuario;
+
+Sequence created.
+
+SQL> INSERT INTO usuario
+  2  Values(sq_usuario.nextval,'Mike','1234'),
+  3  (sq_usuario.nextval.'Jose','7894');
+Values(sq_usuario.nextval,'Mike','1234'),
+                                        *
+ERROR at line 2:
+ORA-00933: SQL command not properly ended
+
+
+SQL> INSERT INTO usuario
+  2  Values(sq_usuario.nextval,'Mike','1234');
+
+1 row created.
+
+SQL> INSERT INTO usuario
+  2  Values(sq_usuario.nextval,'Jose','1234');
+
+1 row created.
+
+SQL> INSERT INTO producto
+  2  VALUES(
+  3
+SQL>
+SQL> CREATE SEQUENCE sq_producto;
+
+Sequence created.
+
+SQL> INSERT INTO producto
+  2  VALUES(sq_producto.nextval,'Arroz','3');
+
+1 row created.
+
+SQL> INSERT INTO producto
+  2  VALUES(sq_producto.nextval,'Azucar','5');
+
+1 row created.
+
+SQL>
